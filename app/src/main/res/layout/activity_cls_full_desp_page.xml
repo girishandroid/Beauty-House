@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_cls_full_desp_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.whitebird.beautycare.FullDespPage.ClsFullDespPage">
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="2"
+        android:visibility="visible"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/banner_home_footer_full_desp_img"
+        tools:ignore="ObsoleteLayoutParam">
+    </com.google.android.gms.ads.AdView>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        android:layout_above="@id/adView">
+    </android.support.v4.view.ViewPager>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        android:layout_alignBottom="@id/view_pager"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="2dp">
+    </android.support.design.widget.TabLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+        android:id="@+id/button_next"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_above="@+id/tab_layout"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:shadowRadius="10"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prev"
+        android:id="@+id/button_prev"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:shadowRadius="10"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_above="@+id/tab_layout"
+        android:layout_toLeftOf="@+id/button_next"
+        android:layout_toStartOf="@+id/button_next"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp" />
+
+</RelativeLayout>

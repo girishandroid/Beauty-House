@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Beauty House</string>
+    <string name="image">Images</string>
+    <string name="banner_home_footer_full_list_with_sub">ca-app-pub-6441643192425526/2687187699</string>
+    <string name="banner_home_footer_full_gridview">ca-app-pub-6441643192425526/2687187699</string>
+    <string name="banner_home_footer_full_imgview">ca-app-pub-6441643192425526/2687187699</string>
+    <string name="banner_home_footer_full_desp_img">ca-app-pub-6441643192425526/2687187699</string>
+    <string name="banner_home_footer">ca-app-pub-6441643192425526/2687187699</string>
+    <string name="white_bird_app_version">Version 1.0.1</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="whitebird_technology">WhiteBird Technology</string>
+    <string name="white_bird_email">help@whitebird.co.in</string>
+    <string name="about_us">About Us</string>
+    <string name="image_url">http://whitebird.co.in/beautyHouse/</string>
+    <string name="no_connection">No Connection</string>
+    <string name="no_connection_title">Set Internet</string>
+    <string name="settings_button_text">Yes</string>
+    <string name="cancel_button_text">Cancle</string>
+    <string name="ShareApp">Share App</string>
+
+</resources>

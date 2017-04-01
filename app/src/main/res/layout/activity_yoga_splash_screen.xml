@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_yoga_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.whitebird.beautycare.SplashScreen.SplashScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/beauty_splash2"
+        android:scaleType="fitCenter"
+        android:id="@+id/splash_imageview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="80dp"
+        android:text="Beauty House"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"
+        android:text="         Powered By:\nWhiteBird Technology"
+        android:paddingBottom="20dp"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
